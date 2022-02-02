@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="360 Cleaners, LLC" property="og:title">
+
     
         <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/LYBGADB42PVUDV2885RSUK0FPDGR07IQZFVPYQ7S.jpeg" property="og:image">
         <meta content="360 Cleaners, LLC" property="twitter:title">
@@ -108,7 +109,7 @@
       
           <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
             <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="0-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -142,11 +143,16 @@ class="flex relative flex-col w-full  bg-blue-900 text-white  lg:flex-row lg:fle
     <div class="flex justify-end p-8 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
             <h2 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
-                360 Cleaners, LLC  
+                360 Cleaners, LLC 
             </h2>
             
             <h1 class="pt-5 lg:text-xl text-center lg:text-left">
-                The best residential cleaning in  Atlanta & surrounding areas.  Exceptional, Professional Cleaning Service. You Are Our Priority.
+                <!--  
+                    The best residential cleaning in
+                     Atlanta & surrounding areas.
+                     
+                  -->
+                Exceptional, Professional Cleaning Service. You Are Our Priority.
             </h1>
             
             <h2 class="py-5 mb-5 lg:text-xl text-center lg:text-left">
@@ -161,18 +167,18 @@ class="flex relative flex-col w-full  bg-blue-900 text-white  lg:flex-row lg:fle
                 <div id="cover-button" class="w-full lg:w-auto ">
                     
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  id="" type="button" x-on:click.prevent="open = true" class=" 
   w-full lg:w-auto 
 
-    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-900">
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-900 z-30">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -202,18 +208,18 @@ class="flex relative flex-col w-full  bg-blue-900 text-white  lg:flex-row lg:fle
                 <div>
                     
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  id="side-button" type="button" x-on:click.prevent="open = true" class=" 
   
 
-   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-900">
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-40 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-900 z-30">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -246,7 +252,9 @@ class="flex relative flex-col w-full  bg-blue-900 text-white  lg:flex-row lg:fle
     <div class="relative order-first lg:order-last block lg:w-1/2 ">
 
     
-        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7CSWNAJCX6LUEFB8CMKQKNDXB26XTPWWAGOPG4R4.jpeg"  alt = "Main hero image of 360 Cleaners, LLC performing Residential Cleaning work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+        
+            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7CSWNAJCX6LUEFB8CMKQKNDXB26XTPWWAGOPG4R4.jpeg"   alt = "Main hero image of 360 Cleaners, LLC performing Residential Cleaning work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+            
     
     </div>
 
@@ -269,7 +277,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     About Us
                 </h5>
                 <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left  lg:text-xl">
-                Backed by 40 years of experience, 360 cleaners can help with any type of speciality cleaning. Take a break from the house cleaning in North Atlanta and Surrounding areas and do something you really enjoy. 360 cleaning service is here to give you more free time while keeping your home fresh and clean. We have friendly professionals who are fully bonded and insured and who will deliver results that satisfy. We guarantee it.<br><br>Our company is locally owned and operated.  We bring our own supplies, and we'll use products that are safe for your home and family. You’ll benefit from our:<br>        1) Weekly, biweekly, and monthly appointment options <br>        2) Proven methods and detail-oriented approach to work <br>        3) Attentive service and immaculate results <br><br>House cleaning doesn't have to consume your entire day. We offer services across North Atlanta, so call us today for your appointment. We have carefully screened employees waiting to assist you, so you won’t have to worry about a thing when you call 360 cleaning service.<br><br><b> Our Guarantee: </b> Expert quality everytime. We don't consider a job done unless there's a smile across your face. We provide customizable cleaning plans that will fit your needs, budget, and schedule. It all begins with a free cleaning estimate and ends with guaranteed satisfaction. That’s the 360 cleaning service way.<br><br><b> Contact Us: </b> Phone: 678-779-8941 || Email: Support@360CleanersLLC.com
+                Backed by 40 years of experience, 360 cleaners can help with any type of speciality cleaning. Take a break from the house cleaning in North Atlanta and Surrounding areas and do something you really enjoy. 360 cleaning service is here to give you more free time while keeping your home fresh and clean. We have friendly professionals who are fully bonded and insured and who will deliver results that satisfy. We guarantee it.<br><br>Our company is locally owned and operated.  We bring our own supplies, and we'll use products that are safe for your home and family. You’ll benefit from our:<br>        1) Weekly, biweekly, and monthly appointment options <br>        2) Proven methods and detail-oriented approach to work <br>        3) Attentive service and immaculate results <br><br>House cleaning doesn't have to consume your entire day. We offer services across North Atlanta, so call us today for your appointment. We have carefully screened employees waiting to assist you, so you won’t have to worry about a thing when you call 360 cleaning service.<br><br><b> Our Guarantee: </b> Expert quality everytime. We don't consider a job done unless there's a smile across your face. We provide customizable cleaning plans that will fit your needs, budget, and schedule. It all begins with a free cleaning estimate and ends with guaranteed satisfaction. That’s the 360 cleaning service way.<br><br><b> Contact Us: </b> Phone: 470-886-9933 || Email: Support@360CleanersLLC.com
                 </p>                
             </div>
 
@@ -332,6 +340,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <br>
     </div>
 
+                
                 
                 
             
@@ -454,41 +463,43 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     
     
     
+    
 
     <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-blue-900   md:pt-20 xl:pt-20 xl:pb-20">
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
             <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
             <h2 class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/QNF6Y151MAK4IPK0FJBLNZJ3EP5BLK1C14OIB5KI.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HZF14O1A9OGC3KQBB37D1KWTBJRIT3LEPLOLX105.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/09RNH657ZENLO3TBPE2R965IJWA84G5LUJ55VZ1D.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/AFYZLEYA5G1AHUDRYTYXP91NRZH1JZAUHQ50RR2A.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1ARJ01AE2JDVZ8IG4K3EO3HWNQ01MOW6QOGKIVOF.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/NFT5ZMO75D4WGJ594HB3PMWUZ5ELJBSSRYOKQL97.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/QNF6Y151MAK4IPK0FJBLNZJ3EP5BLK1C14OIB5KI.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/HZF14O1A9OGC3KQBB37D1KWTBJRIT3LEPLOLX105.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/09RNH657ZENLO3TBPE2R965IJWA84G5LUJ55VZ1D.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/AFYZLEYA5G1AHUDRYTYXP91NRZH1JZAUHQ50RR2A.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1ARJ01AE2JDVZ8IG4K3EO3HWNQ01MOW6QOGKIVOF.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/NFT5ZMO75D4WGJ594HB3PMWUZ5ELJBSSRYOKQL97.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                <!-- <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/QNF6Y151MAK4IPK0FJBLNZJ3EP5BLK1C14OIB5KI.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/HZF14O1A9OGC3KQBB37D1KWTBJRIT3LEPLOLX105.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/09RNH657ZENLO3TBPE2R965IJWA84G5LUJ55VZ1D.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/AFYZLEYA5G1AHUDRYTYXP91NRZH1JZAUHQ50RR2A.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/1ARJ01AE2JDVZ8IG4K3EO3HWNQ01MOW6QOGKIVOF.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/NFT5ZMO75D4WGJ594HB3PMWUZ5ELJBSSRYOKQL97.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   > -->
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QNF6Y151MAK4IPK0FJBLNZJ3EP5BLK1C14OIB5KI.jpeg"  alt = "Photo number 1 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/QNF6Y151MAK4IPK0FJBLNZJ3EP5BLK1C14OIB5KI.jpeg"  alt = "Photo number 1 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/QNF6Y151MAK4IPK0FJBLNZJ3EP5BLK1C14OIB5KI.jpeg"  alt = "Photo number 1 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HZF14O1A9OGC3KQBB37D1KWTBJRIT3LEPLOLX105.jpeg"  alt = "Photo number 2 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/HZF14O1A9OGC3KQBB37D1KWTBJRIT3LEPLOLX105.jpeg"  alt = "Photo number 2 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/HZF14O1A9OGC3KQBB37D1KWTBJRIT3LEPLOLX105.jpeg"  alt = "Photo number 2 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/09RNH657ZENLO3TBPE2R965IJWA84G5LUJ55VZ1D.jpeg"  alt = "Photo number 3 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/09RNH657ZENLO3TBPE2R965IJWA84G5LUJ55VZ1D.jpeg"  alt = "Photo number 3 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/09RNH657ZENLO3TBPE2R965IJWA84G5LUJ55VZ1D.jpeg"  alt = "Photo number 3 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/AFYZLEYA5G1AHUDRYTYXP91NRZH1JZAUHQ50RR2A.jpeg"  alt = "Photo number 4 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/AFYZLEYA5G1AHUDRYTYXP91NRZH1JZAUHQ50RR2A.jpeg"  alt = "Photo number 4 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/AFYZLEYA5G1AHUDRYTYXP91NRZH1JZAUHQ50RR2A.jpeg"  alt = "Photo number 4 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1ARJ01AE2JDVZ8IG4K3EO3HWNQ01MOW6QOGKIVOF.jpeg"  alt = "Photo number 5 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1ARJ01AE2JDVZ8IG4K3EO3HWNQ01MOW6QOGKIVOF.jpeg"  alt = "Photo number 5 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1ARJ01AE2JDVZ8IG4K3EO3HWNQ01MOW6QOGKIVOF.jpeg"  alt = "Photo number 5 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                              
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NFT5ZMO75D4WGJ594HB3PMWUZ5ELJBSSRYOKQL97.jpeg"  alt = "Photo number 6 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/NFT5ZMO75D4WGJ594HB3PMWUZ5ELJBSSRYOKQL97.jpeg"  alt = "Photo number 6 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/NFT5ZMO75D4WGJ594HB3PMWUZ5ELJBSSRYOKQL97.jpeg"  alt = "Photo number 6 of 360 Cleaners, LLC&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                  
                                     
@@ -570,7 +581,6 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
 
             
 </div>
-
         
     
     
@@ -592,7 +602,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
 
                     
-            
+                    
                     <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
                     <div class="flex items-center lg:items-start ">
                         
@@ -619,9 +629,10 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     </div>
                     
                     </div>
+                    
 
                     
-            
+                    
                     <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
                     <div class="flex items-center lg:items-start ">
                         
@@ -648,6 +659,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     </div>
                     
                     </div>
+                    
 
                     
                 </div>  
